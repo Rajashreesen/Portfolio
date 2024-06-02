@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Create a Portfolio Gallery
+        using HTML and CSS
+    </title>
+ 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+ 
+    <style>
+        /* wildcard styling */
+        * {
+            box-sizing: border-box;
+        }
+ 
+        /* padding for whole body */
+        body {
+            padding: 15px;
+        }
+ 
+        /* styling body */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+ 
+        h1 {
+            color:black;
+        }
+ 
+        /* anchor tag decoration */
+        a {
+            text-decoration: none;
+            color: #5673c9;
+        }
+ 
+        a:hover {
+            color: lightblue;
+        }
+ 
+        /* paragraph tag decoration */
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+ 
+        }
+ 
+        /* row and column decoration */
+        .row {
+            margin: 0px -18px;
+            padding: 8px;
+        }
+ 
+        .row>.column {
+            padding: 6px;
+        }
+ 
+        .column {
+            float: left;
+            width: 25%;
+        }
+ 
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+ 
+        /* content decoration */
+        .content {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+ 
+        /* window size 850 width set */
+        @media screen and (max-width: 850px) {
+            .column {
+                width: 50%;
+            }
+        }
+ 
+        /* window size 400 width set */
+        @media screen and (max-width: 400px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <!-- title and tag -->
+    <div class="container">
+        <h1>Rajashree</h1>
+        <h3>SOME MINOR PROJECTS</h3>
+        <hr>
+ 
+        <!-- Content of the body-->
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                   
+                    <h3>
+                        <a href="#">BIDIRECTIONAL SHIFT REGISTER</a>
+                    </h3>
+                    <p>
+                        The register which is used to shift the data on the right side or left side based on
+                        the selected mode is known as the bidirectional shift register. If the selected mode
+                        is high (1), then the data will be moved to the right side & if the selected mode is
+                        low (0), then data will be moved to the left side.Here, if we move a binary number (base two)
+                         to the left side, it is to multiply the nnumber by 2 and if we shift the same binary number to the
+                        right side by 1 position,
+                        it is equal to dividing the number with 2. This register can be implemented through
+                        a 7408(AND gate), 7432(OR gate), 7404(NOT gate) ,7474(D Flip Flop), connecting
+                        wires which allow the data bit to transfer from one stage to the next stage to any
+                        side either right or left based on an input signal. Here, the direction of data shifting
+                        is selected by the mode control.
+                    </p>
+                </div>
+            </div>
+ 
+            <div class="column">
+                <div class="content">
+                   
+                    <h3>
+                        <a href="#">WATER MANAGEMENT USING
+                            NETWORK FLOW</a>
+                    </h3>
+                    <p>
+                        Water distribution systems play a vital role in providing reliable and
+                         efficient water supply to communities. To achieve optimal operation,
+                         network flow algorithms have emerged as powerful tools for managing
+                        and optimizing water distribution networks. The flow network is used
+                        to model the flow of water through the system and to optimize the use
+                        of water resources Effective water management is essential for
+                        human and ecosystem well-being. The benefits of implementing a
+                        network flow-based water management system are manifold. It enables
+                        the optimization of water allocation, leading to improved water
+                        availability and reduced wastage. The system also enhances operational
+                        efficiency, as it provides accurate predictions and real-time monitoring
+                        of the water system's performance.
+                    </p>
+                </div>
+            </div>
+ 
+            <div class="column">
+                <div class="content">
+                   
+                    <h3>
+                        <a href="#">Multi-Thread
+                            banking system]</a>
+                    </h3>
+ 
+                    <p>
+                        This project aims to design and implement a Multi-Thread banking system that
+                        allows concurrent access by multiple users, ensuring the thread-safe processing
+                        of transactions to prevent inconsistencies. The system incorporates a graphical
+                        user interface (GUI) for user interactions, leveraging Java threads to manage
+                        concurrent account operations. Key features include robust Account
+                        Management functionality, enabling users to create, access, and manage their
+                        accounts through operations such as deposit, withdrawal, and balance checks.
+                        To guarantee the integrity of transactions in a concurrent environment, the
+                        system employs synchronization mechanisms for concurrency control.
+                        Additionally, every transaction is logged with a timestamp, facilitating auditing
+                        and providing a transparent record of account activities. The inclusion of a userfriendly
+                         GUI enhances the overall user experience, offering an intuitive interface
+                        for seamless interaction with the banking system. Through this project,
+                        participants will gain practical experience in developing GUI applications,
+                        implementing Java threads, and addressing challenges related to concurrency
+                        control in a multi-user banking environment.
+                        
+                    </p>
+                </div>
+            </div>
+ 
+            
+ 
+        </div>
+    </div>
+</body>
+ 
+</html>
